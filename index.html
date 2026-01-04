@@ -10,8 +10,8 @@
 
 <!-- HEADER -->
 <header class="header">
-  <div class="nav container">
-    <img src="images/logo.png" alt="Vruschika Ventures" class="logo">
+  <div class="container nav">
+    <img src="images/logo.png" class="logo" alt="Vruschika Ventures">
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -20,7 +20,7 @@
   </div>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -34,7 +34,7 @@
 <section class="experience">
   <div class="container">
     <h2>Trusted Real Estate Expertise</h2>
-    <p>Strategic investment, leasing, and advisory services designed for long-term growth.</p>
+    <p>Strategic investments, leasing, and advisory services designed for growth.</p>
   </div>
 </section>
 
@@ -43,11 +43,11 @@
   <h2>About Us</h2>
   <p>
     Vruschika Ventures Private Limited is a Hyderabad-based real estate company
-    focused on property investments, leasing, development, and advisory services.
+    specializing in property investments, leasing, development, and advisory services.
   </p>
 </section>
 
-<!-- FEATURE IMAGE SECTION -->
+<!-- FEATURE IMAGE -->
 <section class="feature">
   <div class="overlay"></div>
   <div class="feature-content">
@@ -69,28 +69,75 @@
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
+  <div class="container contact-grid">
+    <div class="contact-text">
+      <span class="tag">Find Us Fast</span>
+      <h2>Let’s Discuss Your Property Goals.</h2>
+      <p class="locations">
+        <strong>Our Locations</strong><br>
+        🇮🇳 India &nbsp;&nbsp; 🇦🇪 Dubai
+      </p>
+    </div>
 
-    <form action="https://formsubmit.co/info@vruschikaventures.com" method="POST">
+    <form class="contact-form"
+      action="https://formsubmit.co/info@vruschikaventures.com"
+      method="POST">
       <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Phone Number">
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit" class="btn btn-primary">Send Message</button>
+      <input type="text" name="name" placeholder="Full Name*" required>
+      <input type="email" name="email" placeholder="Email*" required>
+      <input type="tel" name="phone" placeholder="Phone Number*">
+      <textarea name="message" placeholder="Message*" required></textarea>
+      <button type="submit">Contact Us</button>
     </form>
-
-    <p class="contact-info">
-      Hyderabad, Telangana, India<br>
-      info@vruschikaventures.com
-    </p>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  © 2026 Vruschika Ventures Private Limited. All Rights Reserved.
+<footer class="footer-section">
+
+  <div class="footer-card container">
+    <div class="footer-col">
+      <img src="images/logo.png" class="footer-logo" alt="Vruschika Ventures">
+      <p>
+        A trusted real estate venture delivering strategic investments,
+        premium properties, and seamless transactions for lasting value.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>
+        Hyderabad, Telangana, India<br><br>
+        📞 +91 XXXXXXXXXX<br>
+        ✉️ info@vruschikaventures.com
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Projects</h4>
+      <ul>
+        <li>Commercial Developments</li>
+        <li>Residential Projects</li>
+        <li>Land Investments</li>
+        <li>Upcoming Ventures</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Vruschika Ventures Private Limited. All Rights Reserved.</p>
+    <p>Terms & Conditions · Privacy Policy</p>
+  </div>
+
 </footer>
 
 </body>
