@@ -1,115 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Vruschika Ventures</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vruschika Ventures Private Limited - Premier real estate development and investment company in Hyderabad, Telangana">
+  <title>Vruschika Ventures - Real Estate Development & Investment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Mobile Menu Toggle -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="nav">
-    <img src="images/logo.png" alt="Vruschika Ventures" class="logo" />
-    <nav class="menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact" class="btn">Get Started</a>
-    </nav>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="nav">
+        <div class="nav-brand">
+          <img src="images/logo.png" alt="Vruschika Ventures Logo" class="logo">
+          <span class="company-name">Vruschika Ventures</span>
+        </div>
+        
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#contact" class="nav-link btn-primary">Get Started</a>
+        </nav>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <p class="tagline">Find Us Fast</p>
-    <h1>Let’s Discuss Your<br/>Property Goals.</h1>
-
-    <div class="locations">
-      <span>🇮🇳 India</span>
-      <span>🇦🇪 Dubai</span>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-  </div>
+  </header>
 
-  <div class="hero-form">
-    <input type="text" placeholder="Full Name" />
-    <input type="email" placeholder="Email" />
-    <input type="text" placeholder="Phone Number" />
-    <textarea placeholder="Message"></textarea>
-    <button>Contact Us</button>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <p class="tagline">Premium Real Estate Solutions</p>
+          <h1>Transform Your Property Investment Goals</h1>
+          <p class="hero-subtitle">Strategic real estate investments and development opportunities in Hyderabad's prime locations</p>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about">
-  <h2>About Us</h2>
-  <p>
-    Vruschika Ventures Private Limited is a Hyderabad-based real estate company
-    specializing in property investments, leasing, development, and advisory services.
-  </p>
-</section>
+          <div class="locations">
+            <div class="location-item">
+              <span class="flag">🇮🇳</span>
+              <span>Hyderabad, India</span>
+            </div>
+            <div class="location-item">
+              <span class="flag">🇦🇪</span>
+              <span>Dubai, UAE</span>
+            </div>
+          </div>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" class="services">
-  <h2>Our Services</h2>
+          <div class="hero-cta">
+            <button class="btn-secondary" onclick="scrollToContact()">Learn More</button>
+          </div>
+        </div>
 
-  <div class="service-grid">
-    <div class="card">Real Estate Investments</div>
-    <div class="card">Property Leasing & Management</div>
-    <div class="card">Land Development & Sales</div>
-    <div class="card">Real Estate Advisory</div>
-  </div>
-</section>
-
-<!-- ================= FEATURE ================= -->
-<section class="feature">
-  <h2>Strategic Real Estate Solutions</h2>
-  <p>
-    Delivering premium real estate investments, seamless transactions,
-    and long-term value for individuals and enterprises.
-  </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="footer-box">
-    <div>
-      <img src="images/logo.png" class="footer-logo" />
-      <p>
-        A trusted real estate venture delivering strategic investments,
-        premium properties, and seamless transactions.
-      </p>
+        <div class="hero-form-container">
+          <form class="hero-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <h3>Get Expert Consultation</h3>
+            
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            
+            <div class="form-group">
+              <select name="interest" required>
+                <option value="">Select Your Interest</option>
+                <option value="investment">Real Estate Investment</option>
+                <option value="leasing">Property Leasing</option>
+                <option value="development">Land Development</option>
+                <option value="advisory">Real Estate Advisory</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <textarea name="message" placeholder="Tell us about your requirements" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Contact Us Today</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h4>Get In Touch</h4>
-      <p>Hyderabad, Telangana, India</p>
-      <p>+91 XXXXXXXXXX</p>
-      <p>info@vruschikaventures.com</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Vruschika Ventures</h2>
+        <p class="section-subtitle">Building Tomorrow's Real Estate Today</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>Vruschika Ventures Private Limited is a premier real estate development and investment company based in Hyderabad, Telangana. Since our incorporation in August 2021, we have been dedicated to delivering exceptional real estate solutions that create lasting value for our clients.</p>
+          
+          <p>Under the visionary leadership of our directors, Venkata Narsimha Subba Raju Nadimpalli and Bhavani Nadimpalli, we specialize in strategic property investments, comprehensive leasing services, innovative development projects, and expert advisory services across Hyderabad's most sought-after locations.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>2021</h4>
+              <p>Established</p>
+            </div>
+            <div class="stat-item">
+              <h4>100+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h4>₹50Cr+</h4>
+              <p>Value Delivered</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h4>Useful Links</h4>
-      <p>About Us</p>
-      <p>Services</p>
-      <p>Contact Us</p>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Core Services</h2>
+        <p class="section-subtitle">Comprehensive Real Estate Solutions Tailored to Your Needs</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Real Estate Investments</h3>
+          <p>Strategic investment opportunities in Hyderabad's prime locations including Gachibowli, Kondapur, and Jubilee Hills with guaranteed returns.</p>
+          <ul class="service-features">
+            <li>Portfolio diversification</li>
+            <li>Market analysis & insights</li>
+            <li>ROI optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Property Leasing & Management</h3>
+          <p>End-to-end property management services ensuring maximum rental yields and hassle-free operations for property owners.</p>
+          <ul class="service-features">
+            <li>Tenant screening</li>
+            <li>Rent collection</li>
+            <li>Property maintenance</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Land Development & Sales</h3>
+          <p>From concept to completion, we transform raw land into premium residential and commercial developments with modern amenities.</p>
+          <ul class="service-features">
+            <li>Project planning</li>
+            <li>Regulatory approvals</li>
+            <li>Construction management</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h3>Real Estate Advisory</h3>
+          <p>Expert consultation and market intelligence to help you make informed real estate decisions and maximize your investment potential.</p>
+          <ul class="service-features">
+            <li>Market research</li>
+            <li>Investment strategy</li>
+            <li>Legal compliance</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h4>Projects</h4>
-      <p>Commercial Developments</p>
-      <p>Residential Projects</p>
-      <p>Land Investments</p>
+  <!-- Feature Section -->
+  <section class="feature">
+    <div class="container">
+      <div class="feature-content">
+        <h2>Why Choose Vruschika Ventures?</h2>
+        <p>We deliver strategic real estate solutions that combine market expertise, innovative approaches, and unwavering commitment to excellence, ensuring sustainable growth and long-term value for all our stakeholders.</p>
+        
+        <div class="feature-highlights">
+          <div class="highlight-item">
+            <h4>Market Expertise</h4>
+            <p>Deep understanding of Hyderabad's real estate dynamics</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Proven Track Record</h4>
+            <p>Consistent delivery of successful projects and satisfied clients</p>
+          </div>
+          <div class="highlight-item">
+            <h4>End-to-End Solutions</h4>
+            <p>Complete real estate services under one roof</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="copyright">
-    © 2026 Vruschika Ventures Private Limited. All Rights Reserved.
-  </div>
-</footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Ready to explore your real estate opportunities? Let's discuss your goals.</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4>📍 Location</h4>
+            <p>Hyderabad, Telangana<br>India - 500001</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>📞 Phone</h4>
+            <p>+91 XXXXXXXXXX</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>✉️ Email</h4>
+            <p>info@vruschikaventures.com</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>🕒 Business Hours</h4>
+            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: By Appointment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Vruschika Ventures" class="footer-logo">
+            <h3>Vruschika Ventures</h3>
+          </div>
+          <p>A trusted real estate venture delivering strategic investments, premium properties, and seamless transactions across Hyderabad and beyond.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Real Estate Investment</a></li>
+            <li><a href="#services">Property Management</a></li>
+            <li><a href="#services">Land Development</a></li>
+            <li><a href="#services">Advisory Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Featured Areas</h4>
+          <ul class="footer-links">
+            <li>Gachibowli</li>
+            <li>Kondapur</li>
+            <li>Jubilee Hills</li>
+            <li>HITEC City</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vruschika Ventures Private Limited. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const body = document.body;
+
+    function toggleMobileMenu() {
+      mobileMenuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      overlay.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    overlay.addEventListener('click', toggleMobileMenu);
+
+    // Close mobile menu when clicking nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+          toggleMobileMenu();
+        }
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Basic form validation
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+
+      if (!name || !email || !phone) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Submit form (replace with actual form submission)
+      alert('Thank you for your inquiry! We will contact you soon.');
+      this.reset();
+    });
+
+    // Scroll to contact function
+    function scrollToContact() {
+      document.getElementById('contact').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    // Add loading state to buttons
+    document.querySelectorAll('button[type="submit"]').forEach(button => {
+      button.addEventListener('click', function() {
+        this.style.opacity = '0.8';
+        setTimeout(() => {
+          this.style.opacity = '1';
+        }, 1000);
+      });
+    });
+  </script>
 </body>
 </html>
