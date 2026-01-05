@@ -216,7 +216,7 @@ body.menu-open {
 .hero {
   min-height: 100vh;
   background: 
-    linear-gradient(135deg, rgba(12, 37, 64, 0.3) 0%, rgba(12, 37, 64, 0.2) 100%),
+    linear-gradient(135deg, rgba(12, 37, 64, 0.15) 0%, rgba(12, 37, 64, 0.1) 100%),
     url("images/hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -265,6 +265,7 @@ body.menu-open {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 24px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-subtitle {
@@ -506,7 +507,7 @@ body.menu-open {
 .feature {
   padding: 100px 0;
   background:
-    linear-gradient(135deg, rgba(12, 37, 64, 0.3) 0%, rgba(12, 37, 64, 0.2) 100%),
+    linear-gradient(135deg, rgba(12, 37, 64, 0.15) 0%, rgba(12, 37, 64, 0.1) 100%),
     url("images/feature.jpg") center/cover no-repeat;
   text-align: center;
   position: relative;
