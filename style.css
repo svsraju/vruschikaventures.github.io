@@ -1,42 +1,27 @@
-/* ================= GLOBAL ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #111;
-  background: #fff;
-  line-height: 1.6;
+  background: #0e2a47;
+  color: #fff;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ================= HEADER ================= */
+/* HEADER */
 .header {
-  background: #3f3f3f;
-  padding: 12px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  background: #06192e;
+  padding: 15px 0;
 }
 
 .nav {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -47,242 +32,127 @@ nav a {
   color: #fff;
   margin-left: 20px;
   text-decoration: none;
-  font-weight: 500;
 }
 
-nav .btn {
-  background: #f5b000;
-  padding: 8px 16px;
-  border-radius: 4px;
+nav a.btn {
+  background: #f4b400;
+  padding: 8px 14px;
+  border-radius: 6px;
   color: #000;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero {
-  height: 85vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  margin-top: 70px;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0e2a47, #1e4f86);
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.55);
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.tag {
+  color: #f4b400;
+  font-weight: bold;
+}
+
+.hero-form {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+}
+
+.hero-form input,
+.hero-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.hero-form button {
+  width: 100%;
+  background: #f4b400;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* PAGE CONTENT */
+.page-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: #fff;
+  color: #000;
   padding: 40px;
-  max-width: 600px;
-  color: #fff;
+  border-radius: 12px;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
+.page-section h1 {
   margin-bottom: 20px;
 }
 
-.hero .btn {
-  background: #f5b000;
-  padding: 10px 22px;
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
+/* FOOTER */
+.footer {
+  background: #0a223c;
+  padding: 40px 20px;
+  margin-top: 60px;
 }
 
-/* ================= EXPERIENCE ================= */
-.experience {
-  background: #0f2747;
-  color: #fff;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.experience h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* ================= FEATURE IMAGE ================= */
-.feature-image img {
-  width: 100%;
-  height: auto;
-}
-
-/* ================= SERVICES ================= */
-.services {
-  padding: 70px 0;
-  text-align: center;
-}
-
-.services h2 {
-  margin-bottom: 30px;
-}
-
-.service-grid {
+.footer-box {
+  max-width: 1200px;
+  margin: auto;
+  background: #eaf1f7;
+  border-radius: 16px;
+  padding: 40px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.card {
-  padding: 25px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-/* ================= CONTACT ================= */
-.contact {
-  background: linear-gradient(135deg, #0f2747, #0a1b33);
-  color: #fff;
-  padding: 80px 0;
-}
-
-.contact-grid {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-}
-
-/* LEFT */
-.contact-text h2 {
-  font-size: 34px;
-  margin-bottom: 15px;
-}
-
-.contact-text p {
-  margin-bottom: 15px;
-}
-
-/* LOCATION ICONS */
-.locations {
-  display: flex;
-  gap: 25px;
-  margin-top: 15px;
-}
-
-.location-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-}
-
-.location-item img {
-  width: 28px;
-  height: 28px;
-}
-
-/* FORM */
-.contact-form {
-  background: rgba(255,255,255,0.12);
-  padding: 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 420px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 4px;
-  border: none;
-}
-
-.contact-form button {
-  background: #0b1f3b;
-  color: #fff;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* ================= FOOTER ================= */
-.site-footer {
-  background: #0e0e0e;
-  color: #ccc;
-  padding: 50px 0 20px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  margin-bottom: 30px;
+  color: #000;
 }
 
 .footer-logo {
-  height: 50px;
-  margin-bottom: 15px;
+  height: 45px;
+  margin-bottom: 10px;
 }
 
-.site-footer ul {
-  list-style: none;
-}
-
-.site-footer ul li {
-  margin-bottom: 8px;
-}
-
-.site-footer a {
-  color: #ccc;
+.footer-col a {
+  display: block;
+  color: #000;
   text-decoration: none;
+  margin-top: 6px;
 }
 
 .footer-bottom {
   text-align: center;
+  color: #ccc;
+  margin-top: 20px;
   font-size: 14px;
-  border-top: 1px solid #333;
-  padding-top: 15px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* MOBILE */
 @media (max-width: 900px) {
-  .service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .locations {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-
   .hero-content {
-    padding: 25px;
+    flex-direction: column;
   }
 
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  nav a {
-    margin-left: 12px;
-    font-size: 14px;
+  nav {
+    display: none;
   }
 }
