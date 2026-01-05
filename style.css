@@ -132,12 +132,20 @@ section {
 .logo {
   height: 40px;
   width: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+/* Fallback if logo doesn't load */
+.logo:not([src]), .logo[src=""], .logo[src="images/logo.png"]:not([complete]) {
+  display: none;
 }
 
 .company-name {
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
+  display: inline-block;
 }
 
 .nav-menu {
@@ -226,8 +234,9 @@ section {
 .hero {
   min-height: 100vh;
   background: 
-    linear-gradient(135deg, rgba(12, 37, 64, 0.9) 0%, rgba(12, 37, 64, 0.7) 100%),
+    linear-gradient(135deg, rgba(12, 37, 64, 0.85) 0%, rgba(12, 37, 64, 0.75) 100%),
     url("images/hero.jpg") center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   padding: 120px 0 60px;
@@ -529,8 +538,9 @@ section {
 .feature {
   padding: 100px 0;
   background:
-    linear-gradient(135deg, rgba(12, 37, 64, 0.9) 0%, rgba(12, 37, 64, 0.8) 100%),
+    linear-gradient(135deg, rgba(12, 37, 64, 0.85) 0%, rgba(12, 37, 64, 0.75) 100%),
     url("images/feature.jpg") center/cover no-repeat;
+  background-attachment: fixed;
   text-align: center;
   position: relative;
   width: 100%;
@@ -666,6 +676,9 @@ section {
 
 .footer-logo {
   height: 32px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
 }
 
 .footer-brand h3 {
@@ -823,6 +836,15 @@ section {
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: flex;
+  }
+
+  /* Optimize background images for mobile */
+  .hero {
+    background-attachment: scroll; /* Better mobile performance */
+  }
+  
+  .feature {
+    background-attachment: scroll; /* Better mobile performance */
   }
 
   .nav-menu {
