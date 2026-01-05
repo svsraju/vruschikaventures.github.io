@@ -41,14 +41,14 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 90vh;
+  min-height: 70vh; /* reduced height */
   background:
     linear-gradient(rgba(10,30,60,0.85), rgba(10,30,60,0.85)),
     url("images/hero.jpg") center/cover no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px;
+  padding: 50px 80px; /* less vertical padding */
   flex-wrap: wrap;
 }
 
@@ -64,6 +64,10 @@ body {
 .hero h1 {
   font-size: 42px;
   margin: 20px 0;
+}
+
+.hero-content h1 {
+  margin-bottom: 12px;
 }
 
 .locations span {
