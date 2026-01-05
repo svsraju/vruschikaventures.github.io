@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL RESET
-================================ */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -14,17 +12,11 @@ body {
   line-height: 1.6;
 }
 
-/* ===============================
-   COMMON
-================================ */
+/* COMMON */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
 }
 
 .section {
@@ -35,9 +27,12 @@ h1, h2, h3 {
   background: #0b223a;
 }
 
-/* ===============================
-   HEADER
-================================ */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* HEADER */
 .header {
   background: #444;
 }
@@ -54,7 +49,7 @@ h1, h2, h3 {
 }
 
 nav a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   margin-left: 20px;
   font-size: 14px;
@@ -68,12 +63,14 @@ nav .btn {
   font-weight: 600;
 }
 
-/* ===============================
-   HERO / CONTACT
-================================ */
+/* HERO */
 .hero {
-  background: linear-gradient(180deg, #1c4a7d, #0e2a47);
-  padding: 100px 0;
+  background:
+    linear-gradient(rgba(14,42,71,0.85), rgba(14,42,71,0.95)),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
 }
 
 .hero-grid {
@@ -99,11 +96,9 @@ nav .btn {
   font-size: 14px;
 }
 
-/* ===============================
-   CONTACT CARD
-================================ */
+/* CONTACT CARD */
 .contact-card {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255,255,255,0.15);
   padding: 28px;
   border-radius: 16px;
   max-width: 420px;
@@ -121,7 +116,6 @@ nav .btn {
   margin-bottom: 12px;
   border-radius: 6px;
   border: none;
-  font-size: 14px;
 }
 
 .contact-card textarea {
@@ -132,37 +126,16 @@ nav .btn {
 .contact-card button {
   padding: 14px;
   background: #f4b400;
-  color: #000;
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  cursor: pointer;
 }
 
-/* ===============================
-   ABOUT
-================================ */
-#about h2 {
-  text-align: center;
-  margin-bottom: 14px;
-}
-
-#about p {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  color: rgba(255,255,255,0.9);
-}
-
-/* ===============================
-   SERVICES
-================================ */
+/* SERVICES */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
-  margin-top: 30px;
 }
 
 .service-card {
@@ -170,12 +143,38 @@ nav .btn {
   padding: 22px;
   border-radius: 14px;
   text-align: center;
-  font-size: 14px;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* FEATURE SECTION */
+.feature {
+  background: url("images/feature.jpg") center/cover no-repeat;
+  height: 420px;
+  position: relative;
+}
+
+.feature-overlay {
+  background: rgba(11,34,58,0.85);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.feature-content {
+  text-align: center;
+}
+
+.feature-content h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.feature-content p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 15px;
+}
+
+/* FOOTER */
 .footer {
   background: #0b223a;
   padding: 60px 0 0;
@@ -196,15 +195,6 @@ nav .btn {
   margin-bottom: 10px;
 }
 
-.footer-box p {
-  font-size: 13px;
-  margin-bottom: 6px;
-}
-
-.footer-box h4 {
-  margin-bottom: 10px;
-}
-
 .footer-bottom {
   text-align: center;
   padding: 20px;
@@ -212,9 +202,7 @@ nav .btn {
   color: #ccc;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-grid,
   .services-grid,
