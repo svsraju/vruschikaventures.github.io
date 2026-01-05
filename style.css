@@ -1,3 +1,6 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +10,21 @@
 
 body {
   background: #0e2a47;
-  color: #fff;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-/* Common */
+/* ===============================
+   COMMON
+================================ */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
+h1, h2, h3 {
+  font-weight: 600;
 }
 
 .section {
@@ -30,7 +35,9 @@ h2 {
   background: #0b223a;
 }
 
-/* Header */
+/* ===============================
+   HEADER
+================================ */
 .header {
   background: #444;
 }
@@ -47,85 +54,128 @@ h2 {
 }
 
 nav a {
-  color: #fff;
-  margin-left: 20px;
+  color: #ffffff;
   text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
 nav .btn {
   background: #f4b400;
+  color: #000;
   padding: 8px 14px;
   border-radius: 4px;
-  color: #000;
+  font-weight: 600;
 }
 
-/* Hero */
+/* ===============================
+   HERO / CONTACT
+================================ */
 .hero {
+  background: linear-gradient(180deg, #1c4a7d, #0e2a47);
   padding: 100px 0;
-  background: linear-gradient(#1c4a7d, #0e2a47);
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
-}
-
-.hero-text h1 {
-  font-size: 38px;
-  margin: 15px 0;
 }
 
 .badge {
   color: #f4b400;
   font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin: 14px 0;
 }
 
 .locations {
   margin-top: 20px;
+  font-size: 14px;
 }
 
-/* Contact Card */
+/* ===============================
+   CONTACT CARD
+================================ */
 .contact-card {
-  background: rgba(255,255,255,0.12);
-  padding: 24px;
-  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 28px;
+  border-radius: 16px;
+  max-width: 420px;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-card input,
 .contact-card textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: none;
+  padding: 12px;
+  margin-bottom: 12px;
   border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-card textarea {
+  min-height: 90px;
+  resize: none;
 }
 
 .contact-card button {
-  width: 100%;
-  padding: 12px;
+  padding: 14px;
   background: #f4b400;
+  color: #000;
   border: none;
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-/* Services */
+/* ===============================
+   ABOUT
+================================ */
+#about h2 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(255,255,255,0.9);
+}
+
+/* ===============================
+   SERVICES
+================================ */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 22px;
+  margin-top: 30px;
 }
 
 .service-card {
   background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 12px;
+  padding: 22px;
+  border-radius: 14px;
   text-align: center;
+  font-size: 14px;
 }
 
-/* Footer */
+/* ===============================
+   FOOTER
+================================ */
 .footer {
   background: #0b223a;
   padding: 60px 0 0;
@@ -146,6 +196,15 @@ nav .btn {
   margin-bottom: 10px;
 }
 
+.footer-box p {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
 .footer-bottom {
   text-align: center;
   padding: 20px;
@@ -153,7 +212,9 @@ nav .btn {
   color: #ccc;
 }
 
-/* Mobile */
+/* ===============================
+   RESPONSIVE
+================================ */
 @media (max-width: 900px) {
   .hero-grid,
   .services-grid,
@@ -161,7 +222,15 @@ nav .btn {
     grid-template-columns: 1fr;
   }
 
+  .contact-card {
+    max-width: 100%;
+  }
+
   nav {
     display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
   }
 }
