@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="home">
+<body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 <header class="header">
-  <div class="container nav">
-    <img src="images/logo.png" class="logo" alt="Vruschika Ventures" />
-    <nav>
+  <div class="nav">
+    <img src="images/logo.png" alt="Vruschika Ventures" class="logo" />
+    <nav class="menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -22,67 +22,65 @@
   </div>
 </header>
 
-<!-- HERO / CONTACT -->
-<section class="hero">
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
   <div class="hero-content">
-    <span class="tag">Find Us Fast</span>
-    <h1>Let’s Discuss Your<br>Property Goals.</h1>
+    <p class="tagline">Find Us Fast</p>
+    <h1>Let’s Discuss Your<br/>Property Goals.</h1>
 
     <div class="locations">
-      <strong>Our Locations</strong>
-      <p>IN India &nbsp;&nbsp; AE Dubai</p>
+      <span>🇮🇳 India</span>
+      <span>🇦🇪 Dubai</span>
     </div>
   </div>
 
-  <form class="contact-card">
+  <div class="hero-form">
     <input type="text" placeholder="Full Name" />
     <input type="email" placeholder="Email" />
     <input type="text" placeholder="Phone Number" />
     <textarea placeholder="Message"></textarea>
-    <button type="submit">Contact Us</button>
-  </form>
+    <button>Contact Us</button>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section dark">
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
   <h2>About Us</h2>
-  <p class="center-text">
+  <p>
     Vruschika Ventures Private Limited is a Hyderabad-based real estate company
     specializing in property investments, leasing, development, and advisory services.
   </p>
 </section>
 
-<!-- FEATURE -->
-<section class="feature">
-  <div class="feature-text">
-    <h2>Strategic Real Estate Solutions</h2>
-    <p>
-      Delivering premium real estate investments, seamless transactions,
-      and long-term value for individuals and enterprises.
-    </p>
-  </div>
-  <img src="images/feature.jpg" alt="Featured Property" />
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section">
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services">
   <h2>Our Services</h2>
-  <div class="services">
-    <div>Real Estate Investments</div>
-    <div>Property Leasing & Management</div>
-    <div>Land Development & Sales</div>
-    <div>Real Estate Advisory</div>
+
+  <div class="service-grid">
+    <div class="card">Real Estate Investments</div>
+    <div class="card">Property Leasing & Management</div>
+    <div class="card">Land Development & Sales</div>
+    <div class="card">Real Estate Advisory</div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer" id="contact">
+<!-- ================= FEATURE ================= -->
+<section class="feature">
+  <h2>Strategic Real Estate Solutions</h2>
+  <p>
+    Delivering premium real estate investments, seamless transactions,
+    and long-term value for individuals and enterprises.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
   <div class="footer-box">
     <div>
       <img src="images/logo.png" class="footer-logo" />
       <p>
         A trusted real estate venture delivering strategic investments,
-        premium properties and seamless transactions.
+        premium properties, and seamless transactions.
       </p>
     </div>
 
@@ -95,9 +93,9 @@
 
     <div>
       <h4>Useful Links</h4>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact Us</a>
+      <p>About Us</p>
+      <p>Services</p>
+      <p>Contact Us</p>
     </div>
 
     <div>
@@ -108,7 +106,7 @@
     </div>
   </div>
 
-  <div class="footer-bottom">
+  <div class="copyright">
     © 2026 Vruschika Ventures Private Limited. All Rights Reserved.
   </div>
 </footer>
