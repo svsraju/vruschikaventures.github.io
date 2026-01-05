@@ -417,10 +417,10 @@ body.menu-open {
 }
 
 .services-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 24px;
-  background: yellow; /* TEMP TEST */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  width: 100%;
 }
 
 .service-card {
@@ -506,7 +506,7 @@ body.menu-open {
 .feature {
   padding: 100px 0;
   background:
-    linear-gradient(135deg, rgba(12, 37, 64, 0.9) 0%, rgba(12, 37, 64, 0.8) 100%),
+    linear-gradient(135deg, rgba(12, 37, 64, 0.7) 0%, rgba(12, 37, 64, 0.6) 100%),
     url("images/feature.jpg") center/cover no-repeat;
   text-align: center;
   position: relative;
@@ -544,7 +544,7 @@ body.menu-open {
 
 .feature-highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 48px;
 }
