@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="home">
 
 <!-- HEADER -->
 <header class="header">
@@ -23,79 +23,66 @@
 </header>
 
 <!-- HERO / CONTACT -->
-<section id="home" class="hero">
-  <div class="container hero-grid">
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">Find Us Fast</span>
+    <h1>Let’s Discuss Your<br>Property Goals.</h1>
 
-    <div class="hero-text">
-      <span class="badge">Find Us Fast</span>
-      <h1>Let’s Discuss Your<br />Property Goals.</h1>
-
-      <div class="locations">
-        <strong>Our Locations</strong><br />
-        IN India &nbsp;&nbsp; AE Dubai
-      </div>
+    <div class="locations">
+      <strong>Our Locations</strong>
+      <p>IN India &nbsp;&nbsp; AE Dubai</p>
     </div>
-
-    <div class="contact-card">
-      <form>
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Phone Number" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Contact Us</button>
-      </form>
-    </div>
-
   </div>
+
+  <form class="contact-card">
+    <input type="text" placeholder="Full Name" />
+    <input type="email" placeholder="Email" />
+    <input type="text" placeholder="Phone Number" />
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Contact Us</button>
+  </form>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Us</h2>
+<section id="about" class="section dark">
+  <h2>About Us</h2>
+  <p class="center-text">
+    Vruschika Ventures Private Limited is a Hyderabad-based real estate company
+    specializing in property investments, leasing, development, and advisory services.
+  </p>
+</section>
+
+<!-- FEATURE -->
+<section class="feature">
+  <div class="feature-text">
+    <h2>Strategic Real Estate Solutions</h2>
     <p>
-      Vruschika Ventures Private Limited is a Hyderabad-based real estate company
-      specializing in property investments, leasing, development, and advisory services.
+      Delivering premium real estate investments, seamless transactions,
+      and long-term value for individuals and enterprises.
     </p>
   </div>
+  <img src="images/feature.jpg" alt="Featured Property" />
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section dark">
-  <div class="container">
-    <h2>Our Services</h2>
-
-    <div class="services-grid">
-      <div class="service-card">Real Estate Investments</div>
-      <div class="service-card">Property Leasing & Management</div>
-      <div class="service-card">Land Development & Sales</div>
-      <div class="service-card">Real Estate Advisory</div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS / FEATURE -->
-<section class="feature">
-  <div class="feature-overlay">
-    <div class="container feature-content">
-      <h2>Building Value Through Strategic Real Estate</h2>
-      <p>
-        From commercial developments to residential projects, we focus on
-        long-term value creation through trusted real estate ventures.
-      </p>
-    </div>
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div>Real Estate Investments</div>
+    <div>Property Leasing & Management</div>
+    <div>Land Development & Sales</div>
+    <div>Real Estate Advisory</div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer" id="contact">
   <div class="footer-box">
-
     <div>
       <img src="images/logo.png" class="footer-logo" />
       <p>
         A trusted real estate venture delivering strategic investments,
-        premium properties revealed with precision.
+        premium properties and seamless transactions.
       </p>
     </div>
 
@@ -108,9 +95,9 @@
 
     <div>
       <h4>Useful Links</h4>
-      <p>About Us</p>
-      <p>Services</p>
-      <p>Contact Us</p>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
     </div>
 
     <div>
@@ -119,7 +106,6 @@
       <p>Residential Projects</p>
       <p>Land Investments</p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
